@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Game Menu</title>
+</head>
+<body>
+    <h1>Bun venit la Jocul de Aritmetică!</h1>
+    <form action="/play" method="post">
+        <label for="difficulty">Alege Nivelul de Dificultate:</label><br>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Amator (EASY) 🤕</option>
+            <option value="medium">Pro (MEDIUM) 🔥</option>
+            <option value="hard">Monk Mode (HARDEST) 🗿</option>
+        </select><br><br>
+        <button type="submit">Start Game</button>
+    </form>
+</body>
+</html>
